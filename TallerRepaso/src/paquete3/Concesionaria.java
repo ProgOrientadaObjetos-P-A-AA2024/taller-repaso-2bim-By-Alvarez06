@@ -60,12 +60,12 @@ public class Concesionaria {
 
     @Override
     public String toString() {
-        String cadena = String.format("Concesionaria %s\n"
+        String cadena = String.format("Concesionaria %s"
                 + "\nListado de Autos:", nombre);
         for (Auto auto : listadoAutos) {
-            cadena = String.format("%s\n%s", cadena, auto.toString());
+            cadena = String.format("%s\n\n%s", cadena, auto.toString());
         }
-        cadena = String.format("%s"
+        cadena = String.format("%s\n"
                 + "\nCosto auto mas caro: %.2f"
                 + "\nCosto auto mas barato: %.2f"
                 + "\nVentas totales: %.2f", 
